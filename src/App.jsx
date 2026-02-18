@@ -11,7 +11,7 @@ import About from './pages/About/About'
 import BestMenu from './pages/BestMenu/BestMenu'
 import Achievements from './pages/Achievements/Achievements'
 import Franchisee from './pages/Franchisee/Franchisee'
-import ReviewsCard from './components/ReviewsCard/ReviewsCard.jsx'
+import ReviewsCard from './components/ReviewsCard/ReviewsCard.jsx';
 import Support from './pages/Support/Support'
 import FindUs from './pages/FindUs/FindUs'
 import Footer from './components/Footer/Footer'
