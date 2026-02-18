@@ -1,0 +1,20 @@
+@use './blocks/_normalize';
+@use './blocks/_variables';
+@use './blocks/_globals';
+@use './blocks/_fonts';
+
+
+@use '../components/Navbar/_Navbar';
+@use '../components/Header/_Header';
+@use '../components/Footer/_Footer';
+@use '../pages/Hero/_Hero';
+@use '../pages/About/_About';
+@use '../pages/BestMenu/_BestMenu';
+@use '../pages/Achievements/_Achievements';
+@use '../pages/Franchisee/_Franchisee';
+@use '../pages/Reviews/_Reviews';
+@use '../pages/Support/_Support';
+@use '../pages/FindUs/_FindUs';
+
+@use '../components/Button/_Button';
+

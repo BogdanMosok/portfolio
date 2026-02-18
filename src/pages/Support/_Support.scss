@@ -1,0 +1,89 @@
+.support{
+    &__title{
+        font-weight: 700;
+        font-size: 70px;
+        line-height: 129%;
+        text-align: center;
+        color: var(--color-dark);
+    }
+    &__form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 80px;
+    }
+    &__enteremail{
+        border: 1px solid #000;
+        border-radius: 40px;
+        padding: 20px 400px 20px 30px;
+        width: 530px;
+        height: 68px;
+        box-shadow: 0 4px 14px 0 rgba(255, 255, 255, 0.15);
+        margin-right: 20px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 156%;
+        text-align: center;
+         color: var(--color-dark);
+    }
+&__btn {
+        // Убираем лишний div-обертку в React или стилизуем саму кнопку
+        &.btn { // Если компонент Button добавляет класс .btn
+            border-radius: 40px !important;
+            padding: 0 54px !important; // Паддинги по бокам, высота за счет height
+            width: 198px !important;
+            height: 68px !important;
+            background: #000 !important;
+            color: #fff !important; // Текст должен быть белым
+            border: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: 0.3s ease-in-out;
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+
+
+}
+}
+
+@media screen and (max-width:750px) {
+    .support__enteremail{
+        width: 200px;
+    }
+}
+@media screen and (max-width: 660px) {
+    /* 1. Делаем контейнер колонкой */
+    .support__form {
+        flex-direction: column; 
+        gap: 15px; /* Расстояние между инпутом и кнопкой */
+    }
+
+    /* 2. Исправляем поле ввода */
+    .support__enteremail {
+        width: 100%;       /* Растягиваем на всю ширину */
+        max-width: 320px;  /* Ограничиваем, чтобы не было слишком широко */
+        margin-right: 0;   /* Убираем отступ справа, он теперь не нужен */
+        
+        /* ГЛАВНОЕ: Убираем ваш паддинг 400px, который ломал верстку */
+        padding: 20px 15px; 
+        height: auto;      /* Позволяем высоте подстроиться */
+        text-align: center;
+    }
+
+    /* 3. Исправляем кнопку */
+    .support__btn.btn {
+        width: 100% !important;  /* Кнопка во всю ширину поля */
+        max-width: 320px !important;
+        margin-left: 0 !important;
+    }
+
+    /* 4. Уменьшаем заголовок, чтобы он не занимал весь экран */
+    .support__title {
+        font-size: 32px;
+        padding: 0 10px 30px;
+    }
+}

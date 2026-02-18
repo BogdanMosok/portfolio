@@ -1,0 +1,75 @@
+.reviews {
+    background-color: var(--color-black);
+    padding: 60px 0;
+    padding-bottom: 150px;
+    &__title {
+        font-size: 50px;
+        text-align: center;
+        color: var(--color-light);
+        margin-bottom: 70px;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap; // Чтобы карточки переносились на мобильных
+        justify-content: center;
+        gap: 30px; // Расстояние между карточками
+    }
+
+    &__box {
+        background: var(--color-darkgray);
+        border-radius: 16px;
+        padding: 30px;
+        width: 370px;
+        display: flex;
+        flex-direction: column;
+     
+    }
+
+    &__box-info {
+        display: flex;
+        align-items: center; // Центрирует аватар и текст по вертикали
+        gap: 12px;
+        margin-bottom: 20px;
+        
+    }
+
+    &__avatar {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__person-content {
+        display: flex;
+        flex-direction: column; // Текст идет колонкой: Имя -> Должность -> Звезды
+        gap: 4px;
+    }
+
+    &__name {
+        margin: 0;
+        font-size: 18px;
+        color: var(--color-light);
+    }
+
+    &__descr {
+        margin: 0;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    &__decor {
+        font-size: 40px;
+        color: var(--color-light);
+        margin: 10px 0;
+        line-height: 1;
+    }
+
+    &__subtitle {
+        font-size: 18px;
+        line-height: 1.5;
+        color: var(--color-light);
+        margin: 0;
+    }
+}

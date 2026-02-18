@@ -1,0 +1,38 @@
+.findus{
+    background: var(--color-black);
+    &__row{
+        display: flex;
+        padding-top: 150px;
+        padding-bottom: 150px;
+
+    }
+    &__left{
+        padding-right: 135px;
+    }
+    &__title{
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 140%;
+        color: var(--color-light);
+        padding-bottom: 16px;
+    }
+    &__descr{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+     color: var(--color-light);
+     padding-bottom: 70px;
+    }
+}
+
+@media screen and (max-width:900px) {
+        .findus__row{
+            display: flex;
+            flex-direction: column;
+        }
+        .findus__descr{
+            justify-content: center;
+            padding-left: 35px;
+        }
+
+}

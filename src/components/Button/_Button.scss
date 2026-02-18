@@ -1,0 +1,19 @@
+.btn{
+    background-color: var(--color-light);
+    border-radius: 40px;
+    padding: 20px 34px;
+
+
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 156%;
+    text-align: right;
+    color: var(--color-dark);
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover{
+    background-color: #d6d4d4;
+    transform: scale(1.2);
+  
+}

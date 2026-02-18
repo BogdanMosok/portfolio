@@ -1,0 +1,174 @@
+.header {
+
+
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 14px;
+        padding-bottom: 14px;
+        padding-right: 20px;
+         animation: fadeIn 3s;
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+
+
+        min-height: 128px;
+    }
+
+
+    &__clogo {
+
+        display: flex;
+        justify-content: center;
+
+    }
+
+    &__left {
+        padding-right: 54px;
+
+    }
+
+    &__right {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        column-gap: 30px;
+
+
+    }
+
+    &__right-cart {
+        position: relative;
+        transition: 0.3s ease-in-out;
+
+    }
+
+    &__right-cart:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+
+    &__right-search {
+        padding-left: 10px;
+        padding-right: 30px;
+        transition: 0.3s ease-in-out;
+    }
+
+    &__right-search:hover {
+        cursor: pointer;
+        transform: scale(1.2);
+    }
+
+    &__right-dot {
+        position: absolute;
+        min-width: 10px;
+        min-height: 10px;
+        background-color: var(--color-red);
+        border-radius: 5px;
+        top: -8px;
+        right: -8px;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        column-gap: 24px;
+        padding: 38px 20px;
+    }
+
+    &__link {
+        display: inline-block;
+        color: var(--color-light);
+        font-size: 24px;
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+    }
+
+    &__link:hover {
+        transform: scale(1.2);
+        opacity: 0.3;
+    }
+
+
+
+
+}
+
+.header__smartmenu {
+    color: var(--color-light);
+    display: none;
+}
+
+.header__burger {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    /* Good for UX */
+}
+
+
+
+@media screen and (max-width: 1083px){
+        .header__list {
+        display: flex;
+        align-items: center;
+        column-gap: 12px;
+        padding: 17px 10px;
+    }
+    .btn{
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .header__smartmenu {
+        display: block;
+        padding: 20px;
+    }
+    .header{
+            background-image: url('../assets/BackImage.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+    }
+
+    .header__nav .header__list{
+
+        flex-direction: column;
+        justify-content:flex-start;
+        background-color: var(--color-black);
+        position:absolute;
+        width: 100%;
+        height: 350px;
+        column-gap: 25px;
+        left: -70px;
+        z-index: 10;
+        top: 140px;
+        display: none;
+      transition: 0.3s ease-in-out;
+    }
+
+            
+
+
+    .active .header__list {
+
+        display: flex;
+        
+        
+    }
+
+
+    .header__right-search {
+        display: none;
+    }
+
+    .header__btn {
+        display: none;
+    }
+}

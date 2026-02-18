@@ -1,0 +1,60 @@
+.hero{
+    background-image: url('../assets/Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding-bottom: 246px !important;
+
+
+    &__container{
+        animation: fadeIn 3s;
+    }
+    &__title{
+
+        font-weight: 900;
+        font-size: 66px;
+        line-height: 145%;
+        color: var(--color-light);
+        padding-top: 72px;
+        padding-bottom: 10px;
+    }
+
+    &__descr{
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 150%;
+        color: var(--color-light);
+        padding-bottom: 40px;
+    }
+    &__btn{
+      
+    }
+
+    
+}
+
+@media screen and (max-width:768px){
+    .hero__title{
+            font-weight: 900;
+            font-size: 29px;
+            line-height: 152%;
+            color: var(--color-light);
+            padding-left: 20px;
+    }
+
+    .hero__descr{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 171%;
+        color: var(--color-light);
+        padding-left: 20px;
+    }
+
+    .orderbutton {
+        display: flex ;
+        margin-left: 20px;
+        border-radius: 40px;
+     align-items: center;
+
+    }
+}

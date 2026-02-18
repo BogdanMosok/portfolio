@@ -1,0 +1,44 @@
+.achievements{
+    background-color: var(--color-black);
+    overflow: hidden;
+        padding-bottom: 180px;
+    &__title{
+
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 136%;
+        text-align: center;
+        color:  var(--color-light);
+        padding-bottom: 60px;
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        column-gap: 30px;
+        color: var(--color-light);
+    }
+    &__subtitle{
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 118%;
+        text-align: center;
+        padding-bottom: 25px;
+    }
+    &__subdecr{
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 167%;
+        text-align: center;
+    
+    }
+}
+
+@media screen and (max-width:640px) {
+
+    .achievements__list{
+        display:block;
+        text-align: center;
+          column-gap: 10px;
+    }
+}
