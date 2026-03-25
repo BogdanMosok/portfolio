@@ -1,0 +1,44 @@
+@import "../../style/mixins";
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 5rem;
+    padding: 1.0625rem 2.0625rem; // 17px 33px -> rem
+    font-size: var(--main-size);
+    line-height: 1.25rem; // 20px -> rem
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--light-color);
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+    @include hover {
+        background-color: var(--accent-color);
+        border-color: var(--accent-color);
+    }
+    &:active {
+        background-color: var(--active-color);
+        border-color: var(--active-color);
+    }
+
+    // Мобильный брейкпоинт
+    @media (max-width: 480px) {
+        padding: 0.75rem 1.25rem; // меньше отступы
+        font-size: 1rem;
+    }
+    @media (max-width: 360px) {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.95rem;
+    }
+}
+
+
+.btn.focus-visible{
+     background-color: var(--active-color);
+}

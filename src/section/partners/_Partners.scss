@@ -1,0 +1,107 @@
+.partners {
+    padding: 16px 0;
+
+    &__container {
+        align-items: center;
+        gap: 6px;
+
+        @include big-desktop {
+            justify-content: space-between;
+        }
+
+        @include tablet {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+    }
+
+    &__logo {
+        @include big-desktop {
+            max-width: 130px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        @include big-desktop {
+            justify-content: space-between;
+        }
+
+        @include tablet {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        @include small-tablet {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 16px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: var(--text-color);
+        transition: color 0.3s ease-in-out;
+        @include small-tablet {
+            font-size: 15px;
+            line-height: 14px;
+            padding: 10px;
+        }
+        
+    }
+
+    &__link {
+        &:active {
+            color: var(--active-color);
+        }
+    }
+
+
+    &__more {
+        margin: 0;
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 16px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: var(--text-color);
+
+        &:focus {
+            outline: none;
+        }
+
+        @include hover {
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+        }
+
+        &:active {
+            border-color: var(--active-color);
+            color: var(--active-color);
+        }
+        @include small-tablet {
+            font-size: 15px;
+            line-height: 14px;
+            padding: 10px;
+        }
+    }
+}
+
+
+.partners__more.focus-visible {
+    outline: 1px solid var(--active-color);
+    outline-offset: 3px;
+}
+
+.partners__link.focus-visible {
+    outline: 1px solid var(--active-color);
+    outline-offset: 3px;
+}

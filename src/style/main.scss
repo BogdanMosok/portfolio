@@ -1,0 +1,20 @@
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+
+
+
+
+
+@import '../components/header/Header';
+@import '../section/hero/Hero';
+@import '../section/steps/Steps';
+@import '../section/approach/Approach';
+@import '../section/info/Info';
+@import '../section/partners/Partners';
+@import '../section/information/Information';
+@import '../section/press/Press';
+@import '../section/where/Where';
+@import '../components/footer/Footer';

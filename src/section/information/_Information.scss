@@ -1,0 +1,88 @@
+.information{
+         position: relative;
+         background-color: #f4f5f5;
+         padding-bottom: 140px;
+    &__text{
+         grid-column: 6 span;
+
+         @include small-tablet{
+            grid-column: 4 span;
+         }
+    }
+    &__title{
+        margin: 0;
+        max-width: 80%;
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 31px;
+        line-height: 38px;
+        letter-spacing: 1.2px;
+        color: var(--dark-color);
+
+        @include small-tablet{
+           margin-bottom: 20px;
+            font-size: 32px;
+            line-height: 32px;
+            margin-inline: 23px;
+         }
+    }
+
+    &__list{
+        grid-column:  7 / 6 span;
+        display: grid;
+        column-gap: var(--offset);
+        row-gap: 36px;
+        grid-template-columns: repeat(6, 1fr);
+
+         @include small-tablet{
+            grid-column: 4 span;
+         }
+    }
+
+    &__item{
+        grid-column: 3 span;
+
+                 @include small-tablet{
+            grid-column: 4 span;
+             grid-template-columns: repeat(4, 1fr);
+         }
+    }
+
+    &__subtitle{
+        margin: 0;
+        margin-bottom: 4px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        color: var(--dark-color);
+        font-family: var(--font-family);
+                @include small-tablet{
+           margin-bottom: 20px;
+            font-size: 18px;
+            line-height: 32px;
+            margin-inline: 23px;
+         }
+    }
+
+    &__descr{
+        margin: 0;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 24px;
+        color: var(--text-color);
+        font-family: var(--font-family);
+                       @include small-tablet{
+           margin-bottom: 20px;
+            font-size: 18px;
+            line-height: 32px;
+            margin-inline: 23px;
+         }
+
+    }
+    @include small-tablet{
+        padding-bottom: 60px;
+
+
+    }
+}
+
