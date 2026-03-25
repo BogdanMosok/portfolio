@@ -14,9 +14,6 @@
   --dark-color: #003331;
 }
 
-/* stylelint-disable */
-/* stylelint-disable */
-/* stylelint-disable */
 .custom-checkbox__field:checked + .custom-checkbox__content::after {
   opacity: 1;
 }
@@ -31,9 +28,6 @@
   pointer-events: none;
 }
 
-/* stylelint-disable */
-/* stylelint-disable */
-/* stylelint-disable value-keyword-case */
 @font-face {
   font-family: "PublicSans";
   src: url("/fonts/PublicSans-Regular.woff2") format("woff2");
@@ -102,7 +96,7 @@ a {
 }
 
 .is-hidden {
-  display: none !important; /* stylelint-disable-line declaration-no-important */
+  display: none !important;
 }
 
 .btn-reset {

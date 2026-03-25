@@ -6,9 +6,9 @@
     justify-content: center;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 5rem;
-    padding: 1.0625rem 2.0625rem; // 17px 33px -> rem
+    padding: 1.0625rem 2.0625rem;
     font-size: var(--main-size);
-    line-height: 1.25rem; // 20px -> rem
+    line-height: 1.25rem; 
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--light-color);
@@ -27,9 +27,8 @@
         border-color: var(--active-color);
     }
 
-    // Мобильный брейкпоинт
     @media (max-width: 480px) {
-        padding: 0.75rem 1.25rem; // меньше отступы
+        padding: 0.75rem 1.25rem; 
         font-size: 1rem;
     }
     @media (max-width: 360px) {

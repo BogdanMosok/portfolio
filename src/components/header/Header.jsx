@@ -6,7 +6,6 @@ export default function Header() {
    const menuRef = useRef(null);
    const burgerRef = useRef(null);
 
-   // Закрытие меню по ESC и клику вне меню
    useEffect(() => {
       function handleKeyDown(e) {
          if (e.key === 'Escape') setMenuOpen(false);
@@ -33,7 +32,6 @@ export default function Header() {
       };
    }, [menuOpen]);
 
-   // Блокировка скролла body при открытом меню
    useEffect(() => {
       if (menuOpen) {
          document.body.style.overflow = 'hidden';
@@ -42,7 +40,6 @@ export default function Header() {
       }
    }, [menuOpen]);
 
-   // ✅ Вынес из JSX
    useEffect(() => {
       function handleResize() {
          if (window.innerWidth > 900 && menuOpen) {
@@ -73,7 +70,6 @@ export default function Header() {
                <span className="burger__line"></span>
             </button>
 
-            {/* Overlay для мобильного меню */}
             {menuOpen && (
                <div
                   className="menu-overlay"
@@ -81,7 +77,6 @@ export default function Header() {
                ></div>
             )}
 
-            {/* Мобильное меню */}
             <div
                ref={menuRef}
                className={`menu${menuOpen ? ' menu--active' : ''}`}
@@ -119,7 +114,6 @@ export default function Header() {
                </nav>
             </div>
 
-            {/* Десктопное меню */}
             <nav className="nav flex desktop-nav" title="Main navigation" data-menu>
                <ul className="list-reset nav__list flex">
                   <li className="nav__item">
