@@ -1,0 +1,89 @@
+.features {
+  padding: 120px 0; 
+  background-color: #F9F9F7;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+  }
+
+  &__images {
+    display: flex;
+    gap: 24px;
+    flex-shrink: 0;
+  }
+
+  &__image-group {
+    display: flex; 
+    flex-direction: column; 
+    gap: 24px;
+    padding-top: 30px;
+  }
+
+  &__img {
+    border-radius: 12px; 
+    object-fit: cover;
+    
+    &--large {
+      height: 100%; 
+    }
+  }
+
+  &__title {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 55px;
+    line-height: 110%;
+    color: #2c2f24;
+    margin-bottom: 20px;
+  }
+
+  &__descr {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #414536;
+    margin-bottom: 50px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  &__item-text {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 45px; 
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    color: #2c2f24;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 30px; 
+      height: 30px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &__icon-clock::before {
+    background-image: url("../../assets/Icon1.svg");
+  }
+  &__icon-offer::before {
+    background-image: url("../../assets/Icon2.svg"); 
+  }
+  &__icon-card::before {
+    background-image: url("../../assets/3.svg");
+  }
+}

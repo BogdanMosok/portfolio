@@ -1,0 +1,132 @@
+.header {
+  &__top {
+    background-color: #474747;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  &__top-left {
+    display: flex;
+    gap: 25px;
+  }
+
+  &__left-contact {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 0;
+  }
+
+  &__left-link {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #f9f9f7;
+  }
+
+  &__right-list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__right-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+
+    img {
+      width: 14px;
+      height: 14px;
+    }
+  }
+    &__right-link:hover{
+      opacity: 0.5;
+    }
+
+  &__middle {
+    padding-top: 29px;
+    padding-bottom: 20px;
+  }
+
+  &__middle-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  &__middle-link {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #2c2f24;
+    text-decoration: none;
+
+
+    padding: 4px 16px;
+    border-radius: 34px;
+    display: inline-block;
+
+
+    background-color: transparent;
+
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+
+    &:hover {
+      background-color: #b8beab;
+    }
+
+
+    &.active {
+      background-color: #dbdfd0;
+
+      &:hover {
+        background-color: #b8beab;
+      }
+    }
+  }
+
+  &__middle-btn {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+
+    padding: 12px 24px;
+    border: 1.50px solid #2c2f24;
+    border-radius: 118px;
+    background-color: transparent;
+    // 3. Шрифт
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    color: #182226;
+
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: #454e52;
+
+      background-color: rgba(44, 47, 36, 0.05);
+    }
+  }
+}

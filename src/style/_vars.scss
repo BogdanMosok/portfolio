@@ -1,0 +1,19 @@
+:root {
+  --font-family: "DM Sans", sans-serif;
+  --content-width: 1296px;
+  --container-offset: 15px;
+	--second-family: "Playfair Display", serif;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+
+  --main-size:13px;
+  --second-size:15px;
+
+  --offset: 32px;
+
+  --light-color: #fff;
+  --accent-color: #00a1ff;
+  --active-color: #e00e00;
+  --text-color: #2c2f24;
+  --dark-color: #003331;
+}

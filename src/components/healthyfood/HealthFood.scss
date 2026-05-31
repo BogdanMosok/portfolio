@@ -1,0 +1,112 @@
+.healthfood {
+    padding: 100px 0;
+    background-color: #F9F9F7;
+    &__container {
+        display: flex;
+        align-items: center;
+        gap: 90px; 
+    }
+
+    &__left {
+        flex: 1;
+    }
+
+    &__image-wrapper {
+        position: relative; 
+        display: inline-block;
+    }
+
+    &__img {
+        width: 100%;
+        max-width: 599px;
+        height: auto;
+        border-radius: 12px;
+        display: block;
+    }
+
+    &__contacts {
+        position: absolute;
+        bottom: -30px; 
+        right: -30px;  
+        background-color: #474747;
+        color: #fff;
+        padding: 40px;
+        border-radius: 12px;
+        width: 350px;
+        box-sizing: border-box;
+
+        &-title {
+            margin-bottom: 45px;
+            font-family: var(--font-family);
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 125%;
+            letter-spacing: -0.03em;
+            color: #fff;
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        &-item {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #f9f9f7;
+        }
+    }
+
+    &__right {
+        flex: 1;
+    }
+
+    &__title {
+        font-family: var(--second-family);
+        font-weight: 500;
+        font-size: 55px;
+        line-height: 110%;
+        color: #2c2f24;
+        padding-bottom: 24px;
+        white-space: pre-line;
+    }
+
+    &__descr {
+        font-family: var(--font-family);
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 156%;
+        color: #2c2f24;
+        padding-bottom: 24px;
+
+        p {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #414536;
+            padding-bottom: 24px;
+        }
+    }
+
+    &__btn{
+        border: 1.50px solid #2c2f24;
+        border-radius: 118px;
+        padding: 20px 32px;
+        width: 180px;
+        height: 64px;
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: right;
+        color: #182226;
+        cursor: pointer;
+    }
+}

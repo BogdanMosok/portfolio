@@ -1,0 +1,63 @@
+.heropages{
+    background: #F9F9F7;
+    padding-bottom: 138px;
+    &__title{
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 100px;
+        line-height: 96%;
+        text-align: center;
+        color: #2c2f24;
+        padding-bottom: 24px;
+        padding-top: 68px;
+    }
+    &__descr{
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 156%;
+        text-align: center;
+        color: #414536;
+        padding-bottom: 72px;
+    }
+    &__list{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        grid-template-rows: repeat(3, auto); 
+        gap: 32px;
+      
+    }
+    &__item{
+        background: #fff;
+        width: 306px;
+        border: 1px solid #f9f9f7;
+        border-radius: 12px;
+        transition: 0.4s ease-in-out;
+    }
+    &__item:hover{
+        transform: scale(1.025);
+    }
+
+}
+.articlescard {
+  cursor: pointer;
+  background: #fff;
+  padding: 10px;
+}
+
+
+
+.article-detail {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.article-detail__image {
+  width: 100%;
+  margin: 20px 0;
+}
+
+.article-detail__back {
+  margin-bottom: 20px;
+  cursor: pointer;
+}

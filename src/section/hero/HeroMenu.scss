@@ -1,0 +1,76 @@
+.heromenu {
+    padding-top: 85px;
+    padding-bottom: 134px;
+    &__title {
+        font-family: var(--second-family);
+        font-weight: 400;
+        font-size: 100px;
+        line-height: 96%;
+        text-align: center;
+        color: #2c2f24;
+        padding-bottom: 20px;
+    }
+
+    &__descr {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 156%;
+        text-align: center;
+        color: #495460;
+        padding-bottom: 50px;
+    }
+}
+
+.menucardf {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 24px;
+
+
+    &__title {
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 130%;
+        text-align: center;
+        color: #2c2f24;
+        padding-bottom: 15px;
+    }
+
+    &__price {
+        display: block;
+        font-family: var(--font-family);
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 125%;
+        letter-spacing: -0.03em;
+        text-align: center;
+        color: #ad343e;
+        padding-top: 30px;
+        padding-bottom: 15px;
+    }
+
+    &__descr {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: #414536;
+        white-space: pre-line;
+        padding-bottom: 34px;
+    }
+}
+
+.itemCardP {
+    border: 1.50px solid #dbdfd0;
+    border-radius: 12px;
+    background: #fff;
+
+    transition: 0.3s ease-in-out;
+}
+.itemCardP:hover{
+    transform: scale(1.05);
+}

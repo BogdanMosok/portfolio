@@ -1,0 +1,28 @@
+@use "vars";
+@use "mixins";
+@use "fonts";
+@use "settings";
+
+
+
+
+
+
+@use "../components/header/Header.scss";
+
+@use  "../section/hero/HeroHome.scss";
+
+@use "../section/browsesection/BrowseSection.scss";
+@use "../components/healthyfood/HealthFood.scss";
+@use "../section/offerssection/OffersSectionHome.scss";
+@use "../section/features/Features.scss";
+@use "../section/testimonialssection/TestimonialsSectionHome.scss";
+@use "../section/articles/Articles.scss";
+@use "../section/advantages/Advantages.scss";
+@use "../components/footer/Footer.scss";
+@use "../section/stats/Stats.scss";
+@use "../section/hero/HeroMenu.scss";
+@use '../components/cards/categorymenu/CategoryMenu.scss';
+@use '../section/partners/Partners.scss';
+@use '../section/hero/HeroPages.scss';
+@use '../section/contactform/ContactForm.scss';
