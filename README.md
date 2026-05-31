@@ -234,11 +234,7 @@ npm run dev
 - **Galeria** (`/pages`) - Galeria zdjęć i treści wizualnych
 - **Kontakt** (`/contact`) - Informacje kontaktowe i formularz zapytań
 
-### 📧 Informacje Kontaktowe
 
-- **Telefon**: (414) 857 - 0107
-- **Email**: happytummy@restaurant.com
-- **Adres**: 837 W. Marshall Lane Marshalltown, IA 50158, Los Angeles
 
 ### 🤝 Współpraca
 
