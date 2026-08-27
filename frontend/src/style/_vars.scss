@@ -1,0 +1,33 @@
+@use "mixins" as *;
+
+:root {
+  --font-family: "Cera Pro", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+
+  --text-color: #3d3d3d;;
+  --text-dark-color: #000;
+  --descr-color: #8F95A5;
+  --light-color: #fff;
+  --greenbtn-color:#46A358;
+
+  --content-width: 1200px;
+  --container-offset: 120px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  --main-size: 13px;
+  --second-size: 15px;
+
+  
+  --offset: 32px;
+}
+
+.container {
+  max-width: var(--container-width); 
+  padding-left: var(--container-offset); 
+  padding-right: var(--container-offset); 
+  margin: 0 auto;
+
+}

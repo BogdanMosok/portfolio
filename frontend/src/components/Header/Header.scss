@@ -1,0 +1,60 @@
+@use "/src/style/mixins" as *;
+
+
+.header {
+   
+    &__container {
+        @include flex-all-sb;
+        padding-top: 33px;
+        padding-bottom: 18px;
+         position: relative;
+                 &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: var(--container-offset);
+            width: var(--content-width);
+            height: 1px;
+            background-color: rgba(70, 163, 88, 0.1);
+        }
+    }
+
+    &__left {
+        @include flex-v-center;
+    }
+
+    &__list {
+        @include flex-all-sb;
+        gap: 50px;
+        padding-left: 230px;
+        padding-right: 260px;
+    }
+
+    &__right {
+        @include flex-v-center;
+        gap: 30px;
+    }
+    &__link{
+        color: var(--text-color);
+        font-weight: 400;
+        font-size: 16px;
+        transition: all 0.3s ease-in-out;
+    }
+    &__link:hover{
+       font-weight: 700;
+    }
+
+    &__auth-actions {
+        @include flex;
+        gap: 5px;
+        background-color: var(--greenbtn-color);
+        padding: 9px 17px;
+
+    }
+
+    &__login {
+        color: var(--light-color);
+        font-weight: 500;
+        font-size: 16px;
+    }
+}

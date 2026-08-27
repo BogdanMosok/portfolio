@@ -1,0 +1,135 @@
+@use "/src/style/mixins" as *;
+
+.hero {
+    padding-top: 12px;
+    
+    &__wrapper {
+        background: linear-gradient(97.77deg, rgba(245, 245, 245, 0.5) -23.47%, rgba(245, 245, 245, 0.5) 107.51%);
+        background-color: #FAFAFA;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 68px 43px;
+        position: relative;
+
+        @include small-tablet {
+            flex-direction: column;
+            padding: 30px 20px 40px;
+            text-align: center;
+        }
+    }
+
+    &__content {
+        max-width: 570px;
+    }
+
+    &__subtitle {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 114%;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--text-color);
+        margin-bottom: 7px;
+    }
+    &__highlight{
+        font-family: var(--font-family);
+        font-weight: 900;
+        font-size: 70px;
+        line-height: 100%;
+        text-transform: uppercase;
+        color: var(--greenbtn-color);
+    }
+
+    &__title {
+        font-weight: 900;
+        font-size: 70px;
+        line-height: 70px;
+        text-transform: uppercase;
+        color: var(--text-color);
+        margin-bottom: 5px;
+
+        @include tablet {
+            font-size: 48px;
+            line-height: 52px;
+        }
+
+        @include mobile {
+            font-size: 32px;
+            line-height: 36px;
+        }
+    }
+
+    &__description {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        color: var(--descr-color);
+        margin-bottom: 44px;
+
+        @include mobile {
+            margin-bottom: 24px;
+        }
+    }
+
+    &__btn {
+        background-color: var(--greenbtn-color);
+        border-radius: 6px;
+        padding: 10px 26px;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: var(--light-color);
+        cursor: pointer;
+        transition: opacity 0.3s ease;
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+
+    &__image {
+        width: 518px;
+        height: 518px;
+        object-fit: contain;
+        flex-shrink: 0;
+
+        @include tablet {
+            width: 380px;
+            height: 380px;
+        }
+
+        @include small-tablet {
+            width: 100%;
+            max-width: 320px;
+            height: auto;
+            max-height: 320px;
+            margin-top: 20px;
+        }
+    }
+
+    &__dots {
+        position: absolute;
+        bottom: 17px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        gap: 8px;
+    }
+
+    &__dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        background-color: rgba(70, 163, 88, 0.3);
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &--active {
+            background-color: var(--greenbtn-color);
+            width: 8px;
+            border-radius: 4px;
+        }
+    }
+}

@@ -1,0 +1,125 @@
+.productcard {
+    padding-top: 31px;
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 146px 50px;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        position: relative;
+        border-top: 2px solid transparent;
+        transition: border-color 0.3s ease;
+
+        &:hover {
+            border-top-color: var(--greenbtn-color, #46A358);
+
+            .productcard__actions {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0);
+            }
+        }
+    }
+
+    &__image-container {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        background-color: #FBFBFB;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    &__img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+        background: transparent;
+    }
+
+    &__badge {
+        position: absolute;
+        top: 14px;
+        left: 0;
+        background-color: var(--greenbtn-color, #46A358);
+        color: #fff;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        padding: 4px 8px;
+        text-transform: uppercase;
+        z-index: 2;
+    }
+
+    &__actions {
+        position: absolute;
+        bottom: 16px;
+        left: 50%;
+        transform: translateX(-50%) translateY(10px);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        z-index: 3;
+    }
+
+    &__action-btn {
+        width: 35px;
+        height: 35px;
+        border-radius: 4px;
+        background-color: #fff;
+        color: #3D3D3D;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.08);
+        cursor: pointer;
+        transition: background-color 0.2s ease, color 0.2s ease;
+
+        &:hover {
+            background-color: var(--greenbtn-color, #46A358);
+            color: #fff;
+        }
+    }
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        color: var(--text-color, #3D3D3D);
+        padding-top: 12px;
+        padding-bottom: 6px;
+        margin: 0;
+    }
+
+    &__price-box {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__price {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 16px;
+        color: var(--greenbtn-color, #46A358);
+        margin: 0;
+    }
+
+    &__old-price {
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 16px;
+        color: #A5A5A5;
+        text-decoration: line-through;
+    }
+}

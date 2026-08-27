@@ -1,0 +1,14 @@
+@use "/src/style/vendor/normalize.css" as *;
+@use "/src/style/vars" as *;
+@use "/src/style/fonts" as *;
+@use "/src/style/settings" as *;
+
+
+
+@use "/src/components/NavBar/NavBar" as *;
+@use "/src/components/Header/Header" as *;
+@use "/src/section/Hero/Hero" as *;
+@use "/src/section/Shop/Shop" as *;
+@use "/src/components/Categories/Categorieslist" as *;
+@use "/src/components/PriceFilter/PriceFilter" as *;
+@use "/src/components/ProductCard/Product" as *;
